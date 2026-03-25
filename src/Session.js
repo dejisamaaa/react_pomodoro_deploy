@@ -9,7 +9,6 @@ const Session = ({ sessTimer, setSessTimer, brTime, setBrTime }) => {
   const handleStartStop = () => {
     if (startStop && sessTimer) {
       setStartStop(false);
-      setSessTimer(s => s - 1)
       setCount(59);
       clearId.current = setInterval(() => {
         setCount(c => c - 1);
