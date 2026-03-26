@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 
 const Session = ({ sessTimer, setSessTimer, brTime, setBrTime }) => {
-  const [count, setCount] = useState('00');
+  const [count, setCount] = useState('59);
   const [sessionEnd, setSessionEnd] = useState(false);
   const [startStop, setStartStop] = useState(true);
   const clearId = useRef(null);
@@ -9,7 +9,6 @@ const Session = ({ sessTimer, setSessTimer, brTime, setBrTime }) => {
   const handleStartStop = () => {
     if (startStop && sessTimer) {
       setStartStop(false);
-      setCount(59);
       clearId.current = setInterval(() => {
         setCount(c => c - 1);
       }, 1000);
