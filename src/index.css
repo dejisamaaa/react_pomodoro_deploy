@@ -122,6 +122,10 @@ body {
     width: 80%;
     margin: 0 auto;
   }
+
+  .play {
+    column-gap: 1rem;
+  }
 }
 
 @media screen and (max-height: 425px) and (min-aspect-ratio: 7/4) {
@@ -136,4 +140,7 @@ body {
     position: relative;
     margin-top: 5rem;
   }
-}
+
+  .play {
+    column-gap: 1rem;
+  }
