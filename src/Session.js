@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 
 const Session = ({ sessTimer, setSessTimer, brTime, setBrTime }) => {
-  const [count, setCount] = useState(59);
+  const [count, setCount] = useState(100);
   const [sessionEnd, setSessionEnd] = useState(false);
   const [startStop, setStartStop] = useState(true);
   const clearId = useRef(null);
